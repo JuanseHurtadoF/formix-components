@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@source "./**/*.{js,jsx,ts,tsx}";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primary: rgb(99, 102, 241);
+  --color-primary-light: rgb(238, 242, 255);
+  --color-primary-dark: rgb(79, 70, 229);
+  --color-error: rgb(239, 68, 68);
+  --color-error-light: rgb(254, 242, 242);
+}
+
+@layer base {
+  html {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
